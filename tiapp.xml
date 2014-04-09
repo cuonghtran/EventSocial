@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">88UZTXFe6iN8n8OO4aFcWlyi6YbSFqYf</property>
+    <property name="acs-oauth-key-production" type="string">Y0EAMudraCYsQzsSOE1wuOXrxMxGoVii</property>
+    <property name="acs-api-key-production" type="string">EqUrU6t7wxwi1rVTvKvVHqjIjJ5Ev2nk</property>
+    <property name="acs-oauth-secret-development" type="string">t5BtZ9uebp3jESvGCfvvzewjBZJhDiUk</property>
+    <property name="acs-oauth-key-development" type="string">RUTdM1KxCrZPuWgSixs14tIe9WJsd7R9</property>
+    <property name="acs-api-key-development" type="string">zX050naXUpJKjArE3e4cYSGUlhkgPipg</property>
     <id>com.huycuong.eventsocial</id>
     <name>EventSocial</name>
     <version>1.0</version>
@@ -48,7 +54,8 @@
         <theme>default</theme>
     </mobileweb>
     <modules>
-    	<module platform="android">facebook</module>
+        <module platform="android">facebook</module>
+        <module platform="commonjs">ti.cloud</module>
     </modules>
     <deployment-targets>
         <target device="iphone">false</target>

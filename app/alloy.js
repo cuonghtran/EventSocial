@@ -10,3 +10,5 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 Alloy.Globals.Facebook = require('facebook');
+var Cloud = require('ti.cloud');
+Cloud.debug = true;  // optional; if you add this line, set it to false for production
