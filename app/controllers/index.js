@@ -2,6 +2,7 @@
 var fb = require('facebook');
 fb.appid = FACEBOOK_APP_ID;
 fb.permissions = ['publish_stream'];
+
 fb.addEventListener('login', function(e) {
     if (e.success) {
         alert('Logged in');
