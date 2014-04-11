@@ -60,22 +60,24 @@ function Controller() {
         backgroundColor: "orange",
         color: "white",
         title: "Đăng nhập",
-        id: "btnLogin"
+        id: "btnLogin",
+        onclick: "Login"
     });
     $.__views.__alloyId1.add($.__views.btnLogin);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var fb = require("facebook");
+    fb.appid = "723879694301863";
+    fb.permissions = [ "publish_stream" ];
     fb.addEventListener("login", function(e) {
         e.success && alert("Logged in");
     });
     fb.addEventListener("logout", function() {
         alert("Logged out");
     });
-    var win = Ti.UI.currentWindow;
-    win.add(fb.createLoginButton({
-        top: 50,
-        style: wide
+    $.index.add(fb.createLoginButton({
+        top: 300,
+        style: fb.BUTTON_STYLE_WIDE
     }));
     $.index.open();
     _.extend($, exports);

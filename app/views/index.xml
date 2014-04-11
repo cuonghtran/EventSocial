@@ -9,8 +9,7 @@
 			<Label id="title">Event Social Network</Label>
 			<TextField id="txtUsername" hintText="Tài khoản..."></TextField>
 			<TextField id="txtPassword" hintText="Mật khẩu..."></TextField>
-			<Button id="btnLogin">Đăng nhập</Button>
-        	<!--<LoginButton id="fbButton" ns="Alloy.Globals.Facebook"/>-->
+			<Button id="btnLogin" onclick="Login">Đăng nhập</Button>
 		</View>
 	</Window>
 </Alloy>
