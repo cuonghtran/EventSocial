@@ -7,19 +7,6 @@
 	backgroundColor: "#3B72D1"
 }
 
-".statusBar" : {
-	width: 'auto',
-	height: 'auto',
-	backgroundColor: "#1C2129",
-	color: 'white'
-}
-
-"#statusLabel": {
-	color: 'white',
-	textalign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-	verticalalign: 'center'
-}
-
 "#txtUsername": {
 	width:250,
 	height:50

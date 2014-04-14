@@ -1,0 +1,23 @@
+<Alloy>
+	<Window class="container">
+		<View class="statusBar">	
+			<View class="leftBar">
+				<Label id="lbName">Tạo sự kiện</Label>
+			</View>		
+			<View class="rightBar">
+				<Label id="lbNext" onClick="nextStep">Tiếp</Label>
+			</View>							
+		</View>">
+		<View class="content" layout="vertical">
+			<TextField id="txtEventName"></TextField>
+			<View class="datetimePicker" layout="horizontal">
+				<TextField id="datePicker"></TextField>
+				<TextField id="timePicker"></TextField>
+			</View>
+			<TextField id="placePicker"></TextField>
+			<TextField id="formPicker"></TextField>
+			<Label id="lbSecure">Bảo mật</Label>
+			<TextField id="friendPicker"></TextField>
+		</View>
+	</Window>
+</Alloy>

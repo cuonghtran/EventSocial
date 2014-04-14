@@ -1,0 +1,81 @@
+".container" : {
+	backgroundColor:"white"
+},
+
+".content" : {
+	backgroundColor: "#3B72D1",
+	top: 30
+}
+
+".statusBar" : {
+	width: 'auto',
+	height: 'auto'
+}
+
+".leftBar" : {
+	backgroundColor:'blue',
+	width:Ti.UI.SIZE,
+    height:Ti.UI.SIZE,
+    top:4,
+    left:0,
+    layout:'horizontal'
+}
+
+".rightBar" : {
+	backgroundColor:'green',
+    width:Ti.UI.SIZE,
+    height:Ti.UI.SIZE,
+    top:4,
+    right:0,
+    layout:'horizontal'
+}
+
+"#txtEventName": {
+	width:250,
+	top:15,
+	hintText: 'Tên sự kiện'
+}
+
+".datetimePicker" : {
+	width:250,
+	top:15,
+}
+
+"#datePicker": {
+	width:110,	
+	hintText: 'Ngày',
+	editable: false,
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED
+}
+
+"#timePicker": {
+	width:110,	
+	left: 15,
+	hintText: 'Thời gian',
+	editable: false,
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED
+}
+
+"#placePicker": {
+	width: 250,
+	top: 15,
+	hintText: 'Địa điểm'
+}
+
+"#formPicker": {
+	width: 250,
+	top: 15,
+	hintText: 'Hình thức sự kiện'
+}
+
+"#lbSecure": {
+	width:250,
+	top: 15,
+	setBorderColor: 'gray'
+}
+
+"#friendPicker": {
+	width: 250,
+	top: 15,
+	hintText: 'Bạn bè'
+}

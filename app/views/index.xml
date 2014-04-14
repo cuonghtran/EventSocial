@@ -1,15 +1,10 @@
 <Alloy>
-	<Window class="container">
-		<View class="statusBar" layout="horizontal">
-			<!--<Button id="hamburgerButton"></Button>-->
-			<Label id="statusLabel">Status bar</Label>
-			<!--<Button id="searchButton"></Button>-->
-		</View>
+	<Window class="container" onPostlayout="animateOpen">	
 		<View class="content" layout="vertical">
 			<Label id="title">Event Social Network</Label>
 			<TextField id="txtUsername" hintText="Tài khoản..."></TextField>
 			<TextField id="txtPassword" hintText="Mật khẩu..."></TextField>
-			<Button id="btnLogin" onclick="Login">Đăng nhập</Button>
+			<Button id="btnLogin" onClick="Login">Đăng nhập</Button>
 		</View>
 	</Window>
 </Alloy>
